@@ -76,6 +76,7 @@ function startTimer() {
     if (!isRunning) {
         isRunning = true;
         updateTheme(); // Switch to active theme when starting
+        updateModeLabel();
         const intervalSpeed = fastTest ? 50 : 1000; // 100ms for fast test, 1000ms for normal
         timerInterval = setInterval(() => {
             if (remainingTime > 0) {

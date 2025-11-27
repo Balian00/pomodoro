@@ -1,5 +1,5 @@
 // Timer state variables
-const fastTest = true; // Set to true for fast testing, false for normal speed
+const fastTest = false; // Set to true for fast testing, false for normal speed
 let remainingTime = 25 * 60; // in seconds
 let isRunning = false;
 let timerInterval = null;

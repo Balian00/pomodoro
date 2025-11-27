@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <span class="header-icon">⏳</span>
+            <div>
+                <h1>Pomodoro Timer</h1>
+                <p class="header-subtitle">Boost your productivity</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="timer-container">
+            <div id="mode-label" class="mode-label" aria-live="polite" >Work</div>
+            <div id="timer-display">25:00</div>
+            <div class="controls">
+                <button id="start-button">Start</button>
+                <button id="pause-button">Pause</button>
+                <button id="reset-button">Reset</button>
+            </div>
+            <div class="settings">
+                <label for="work-duration">Work Duration (minutes):</label>
+                <input type="number" id="work-duration" value="25" min="1" max="60">
+                <label for="break-duration">Break Duration (minutes):</label>
+                <input type="number" id="break-duration" value="5" min="1" max="30">
+                <button id="set-default" class="default-button">Set Default</button>
+            </div>
+        </div>
+        
+    </main>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <span class="footer-icon">⏳</span>
+            <div>
+                <p class="footer-title">&copy; Pomodoro timer by <a href="https://github.com/Balian00" target="_blank" rel="noopener noreferrer author">Balian Franquet</a></p>
+                <p class="footer-version">Version 0.1 &mdash; Shared with friends only</p>
+            </div>
+        </div>
+    </footer>
+<script src="app.js"></script>
+</body>
+</html>
